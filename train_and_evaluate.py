@@ -1,3 +1,13 @@
+from pathlib import Path
+
+dir_path = Path("example_directory")
+
+if dir_path.is_dir():
+    print("Directory exists.")
+else:
+    print("Directory does not exist.")
+
+
 import os
 print("Current working directory:", os.getcwd())
 print("Contents:", os.listdir())
